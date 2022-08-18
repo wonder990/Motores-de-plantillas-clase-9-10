@@ -1,0 +1,14 @@
+html
+    head
+        title='test pug'
+        style
+            include styles.css
+    body
+        h1=title 
+        a(href="http://localhost:8080/products")='volver al listado' 
+        div
+            form(action="/products",method="post") 
+                input(type="text", name="title")
+                input(type="text" ,name="price")
+                input(type="text" ,name="thumbnail")
+                input(type="submit", value="subir")

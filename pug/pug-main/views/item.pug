@@ -1,0 +1,14 @@
+html
+    head
+        title='test pug'
+        style
+            include styles.css
+    body
+        h1=title  
+        div
+       
+            div
+                p=found.id
+                p=found.title
+                p=found.price
+                img(class='product-img', src=found.thumbnail)

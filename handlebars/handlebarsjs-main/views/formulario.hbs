@@ -1,0 +1,16 @@
+{{> navbar}}
+<br/>
+
+<h1>formulario</h1>
+        <a href="http://localhost:8080/products"> volver al listado</a>
+        <div class="product_card">
+            <form method="post" action="/products">
+                <input type="text" name="title" id="title" >
+                <input type="text" name="price" id="price">
+                <input type="text" name="thumbnail" id="thumbnail">
+                <input type="submit" value="enviar archivo ">
+            </form>
+        </div>
+<br/>
+{{> footer}}
+<br/>

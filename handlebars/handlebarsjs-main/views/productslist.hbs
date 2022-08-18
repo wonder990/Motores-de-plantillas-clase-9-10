@@ -1,0 +1,19 @@
+{{> navbar}}
+<br/>
+
+<h1>Listado de productos</h1>
+<a href="http://localhost:8080/form">ir al formulario</a>
+{{#if productsExist}}
+    {{#each products}}
+        <div class="product_card">
+            {{this.id}}<br/>
+            {{this.title}}<br/>
+            {{this.price}}<br/>
+            <img src="{{this.thumbnail}}" class="product-img"/>
+        </div>
+    {{/each}}
+{{/if}}
+
+<br/>
+{{> footer}}
+<br/>

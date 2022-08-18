@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <%- include('../partials/navbar'); %>
+   
+    <a  href="http://localhost:8080/products">Volver al listado</a>
+    <br>
+        <form action="/products" method="post">
+            <input type="text" name="name" placeholder="name">
+            <input type="text" name="price" placeholder="price">
+            <input type="text" name="thumbnail" placeholder="thumbnail">
+            <input type="submit" value="subir">
+        </form>
+  
+    <%- include('../partials/footer'); %> 
+  </body>
+</html>
